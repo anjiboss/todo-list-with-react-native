@@ -4,4 +4,17 @@ Steps to run this project:
 
 1. Run `npm i` command
 2. Setup database settings inside `ormconfig.json` file
-3. Run `npm start` command
+3. Build? :
+   `npm run build` or `yarn build`.
+   Production mode:
+   `npm start` or `yarn start`.
+4. Development:
+
+   - Typescript Watch mode:
+     `npm run watch` or `yarn watch`.
+   - Run with `nodemon`:
+     `npm run dev` or `yarn dev`.
+
+   - Run With `Concurrently` (easiest way to run, just with 1 command)
+     - `npm run con` or `yarn con`
+     - _Note_ : To run this you must have [Concurrently](https://github.com/open-cli-tools/concurrently) installed Global or Install it as dev dependency

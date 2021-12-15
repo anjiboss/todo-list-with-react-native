@@ -18,3 +18,15 @@ Steps to run this project:
    - Run With `Concurrently` (easiest way to run, just with 1 command)
      - `npm run con` or `yarn con`
      - _Note_ : To run this you must have [Concurrently](https://github.com/open-cli-tools/concurrently) installed Global or Install it as dev dependency
+
+# API
+
+-Version 1:
+
+- `GET`
+  - `/v1/api/todo`: Get All _Uncompleted_ Todos
+  - `/v1/api/todo/completed`: Get All _Completed_ Todos
+- `POST`:
+  - `/v1/api/todo`: Add New Todo (status is setted to `false` by default)
+- `PUT`:
+  - `/v1/api/todo`: Toggle Current Todo status.

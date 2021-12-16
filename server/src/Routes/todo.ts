@@ -31,6 +31,7 @@ todoRouter.get("/completed", async (_, res) => {
 
 // ------------------------------------ Add New Todo
 todoRouter.post("/", async (req, res) => {
+  console.log(req.body)
   const { name } = req.body;
   const todoRepo = getRepository(Todo);
   const newTodo = new Todo();
@@ -40,6 +41,7 @@ todoRouter.post("/", async (req, res) => {
 
   res.json({
     ok: true,
+    todo: newTodo
   });
 });
 

@@ -39,7 +39,7 @@ userRoute.post("/", async (req, res) => {
   newUser.username = username;
   const hashedPw = await bcrypt.hash(password, 10);
   newUser.password = hashedPw;
-
+  //just add this line for testing
   await userRepo.save(newUser);
   res.json({
     ok: true,
